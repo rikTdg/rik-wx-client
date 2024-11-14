@@ -1,0 +1,164 @@
+.cart-page {
+    padding: 20rpx;
+    background-color: #f9f9f9;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100rpx;
+    background-color: #fff;
+    border-bottom: 1rpx solid #eaeaea;
+    margin-bottom: 20rpx;
+}
+
+.title {
+    font-size: 40rpx;
+    font-weight: bold;
+    color: #333;
+}
+
+.merchant-section {
+    margin-bottom: 30rpx;
+}
+
+.merchant-header {
+    padding: 20rpx;
+    background-color: #f0f0f0;
+    border-radius: 10rpx;
+    margin-bottom: 10rpx;
+    display: flex;
+    align-items: center;
+}
+
+.merchant-name {
+    font-size: 32rpx;
+    font-weight: bold;
+    color: #2c2c2c;
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 12rpx;
+    margin-bottom: 10rpx;
+    box-shadow: 0 4rpx 10rpx rgba(0, 0, 0, 0.05);
+
+    .cart-item-header,
+    .cart-item-body {
+        margin: 10rpx;
+    }
+}
+
+.cart-item-header {
+    display: flex;
+    align-items: center;
+}
+
+.item-image {
+    width: 150rpx;
+    height: 150rpx;
+    margin-right: 20rpx;
+    border-radius: 8rpx;
+}
+
+.cart-item-body {
+    width: 71%;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    padding: 10rpx 0;
+}
+
+/* 标题 */
+.uni-title {
+    display: flex;
+    margin-bottom: $uni-spacing-col-base;
+    font-size: $uni-font-size-base;
+    font-weight: bold;
+    color: #3b4144;
+}
+
+.uni-title-sub {
+    display: flex;
+    margin-bottom: $uni-spacing-col-base;
+    font-size: $uni-font-size-sm;
+    font-weight: 500;
+    color: #3b4144;
+}
+
+.uni-tag {
+	flex-shrink: 0;
+	padding: 0 5px;
+	border: 1px $uni-border-color solid;
+	margin-right: $uni-spacing-row-sm;
+	border-radius: $uni-border-radius-base;
+	background: $uni-bg-color-grey;
+	color: $uni-text-color;
+	font-size: $uni-font-size-sm;
+}
+
+.item-price {
+	font-size: $uni-font-size-base;
+    font-weight: bold;
+}
+
+.shop-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.shop-price-text {
+	font-size: $uni-font-size-sm;
+    color: #ff5722;
+}
+
+.merchant-total {
+    text-align: right;
+    font-size: 28rpx;
+    font-weight: bold;
+    color: #2c2c2c;
+    margin: 10rpx 0;
+}
+
+.total-price {
+    text-align: right;
+    font-size: 36rpx;
+    font-weight: bold;
+    color: #ff5722;
+    margin: 20rpx 0;
+}
+
+.checkout-button {
+    margin: 0 auto;
+    width: 90%;
+    background: linear-gradient(90deg, #ff6b6b, #ff4d4d);
+    border-radius: 10rpx;
+    color: #fff;
+    font-size: 34rpx;
+    padding: 18rpx 0;
+    box-shadow: 0 4rpx 10rpx rgba(255, 107, 107, 0.2);
+    transition: all 0.3s ease;
+}
+
+.checkout-button:hover {
+    background: linear-gradient(90deg, #ff4d4d, #ff3b3b);
+}
+
+.uni-ellipsis-1 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.uni-ellipsis-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}

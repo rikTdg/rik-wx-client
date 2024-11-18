@@ -11,17 +11,20 @@
         </swiper>
       </view>
       <view class="text-box" scroll-y="true">
-        <view>
-          <uni-tag text="前端" type="primary" /><text>uni-app、uni-ui、Pinia、Vite</text>
+        <view>          
+          <uni-tag text="前端" type="success" size="small"  /><text>uni-app、uni-ui、Pinia、Vite</text>
         </view>
         <view>
-          <uni-tag text="后端" type="primary" /><text>Spring Boot、Spring JPA、Scrapy</text>
+          <uni-tag text="后端" type="primary" size="small"  /><text>Spring Boot、Spring JPA、Scrapy</text>
         </view>
         <view>
-          <uni-tag text="数据库" type="primary" /><text>MySQL</text>
+          <uni-tag text="环境" type="error" size="small"  /><text>AWS、Linux、Docker</text>
         </view>
         <view>
-          <uni-tag text="环境" type="primary" /><text>AWS、Linux、Docker</text>
+          <uni-tag text="数据库" type="default" size="small" /><text>MySQL、Redis</text>
+        </view>
+        <view>
+          <uni-tag text="版本控制" type="warning" size="small" /><text class="text-link">https://github.com/rikTdg/rik-wx-client</text>
         </view>
       </view>
       <view style="width: 85%;">
@@ -128,7 +131,7 @@ export default {
   onLoad() {
   },
   mounted() {
-    // this.fetchItems();
+    this.fetchItems();
   },
   onPullDownRefresh() {
     this.pullDownRefresh();
@@ -227,10 +230,14 @@ export default {
   // padding: 20rpx 0;
   display: flex;
   min-height: 200rpx;
-  font-size: 26rpx;
+  font-size: 22rpx;
   color: #353535;
   line-height: 2;
   flex-direction: column;
+}
+
+.text-box uni-tag{
+  width: 100rpx;
 }
 
 .text-box text {
@@ -340,6 +347,7 @@ page {
 }
 
 .uni-ellipsis-2 {
+  width: 480rpx;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;

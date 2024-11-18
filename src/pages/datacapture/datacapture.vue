@@ -62,7 +62,6 @@ export default {
           
           this.loadButtons[index] = false;
           this.pgList[index] = 100;
-          console.log(this.loadResults);
           this.pageInit();
         }).catch(err => {
           console.error(err);
@@ -72,7 +71,6 @@ export default {
       request({ url: '/api/items/getlatest', method: 'GET', data: {} })
         .then(res => {
           this.lastItems = res.data;
-          console.log(this.lastItems);
           if (this.lastItems && this.lastItems.length > 1) {            
             this.lastItems.forEach((item, i) => {
               this.loadDisabled[i] = isSameDay(new Date(), item.datetimeGen.replace(" ", "T"));

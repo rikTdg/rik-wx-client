@@ -270,6 +270,7 @@ page {
 }
 
 .uni-ellipsis-2 {
+  width: 480rpx;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;

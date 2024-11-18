@@ -42,6 +42,11 @@
 	font-size: $uni-font-size-sm;
 }
 
+.text-link {
+	color: #007aff; /* 超链接颜色 */
+	text-decoration: underline; /* 下划线样式 */
+}
+
 /* 列表内容 */
 .uni-list-box {
 	@extend .uni-flex-row;

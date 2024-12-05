@@ -3,6 +3,12 @@
 基于 **UniApp** 和 **Vite** 开发的微信小程序，主要用于展示和搜索数据、实现购物车功能，并提供 AI 聊天支持（后续版本）。该项目旨在个人学习与交流中使用。
 
 ---
+<div style="display: flex; justify-content: space-between;">
+   <img src="Screenshots/wx-home.png" alt="首页" width="200"/>
+   <img src="Screenshots/wx-list.png" alt="列表搜索" width="200"/>
+   <img src="Screenshots/wx-data.png" alt="数据加载" width="200"/>
+   <img src="Screenshots/wx-cart.png" alt="购物车" width="200"/>
+</div>
 
 ## 🌟 功能特性
 
